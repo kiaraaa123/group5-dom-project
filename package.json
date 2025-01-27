@@ -1,0 +1,17 @@
+{
+  "name": "group5-dom-project",
+  "version": "1.0.0",
+  "description": "[Description](#description) | [Demo](#demo) | [Important Git/Github Expectations](#important-gitgithub-expectations) | [Getting Started](#getting-started) | [Requirements](#getting-started) | [Bonuses](#bonuses) ## Description You will be building a Book Store Website using HTML, CSS, and JavaScript (aka, the DOM) based on a demo shown below. This application will enhance existing knowledge of client side development basics. <br> Below you will see a demo of the Book Store Application that will show you what features need to be added into this interactable website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./styles.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
