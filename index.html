@@ -8,31 +8,41 @@
 </head>
 <body>
     <header>
-        <h1>Book Store</h1>
-        <p>Manage your book collection easily!</p>
+        <h1>Welcome to the Book Store!</h1>
     </header>
 
     <main class ="container">
         <!--Form Section-->
         <section class="form_selection">
-            <h2>Add a New Book</h2>
+            <h3>Add a book to the store</h3>
             <form id="book_form">
+
+              <div class="input">
                 <label for="title">Book Title</label>
-                <input type = "text" id="title" placeholders="Enter book title"required>
-
+                            
+                <input type = "text" id="title" placeholder="Enter book title"required>
+                            
+               </div>
+               <div class="input">
                 <label for="author">Book Author</label>
-                <input type = "text" id="title" placeholders="Enter author's name"required>
-
-                <label for="publisher">Book Publisher</label>
-                <input type = "text" id="publisher" placeholders="Enter publisher name"required>
-                <button type ="submit">Add Book</button>
+                            
+                <input type = "text" id="author" placeholder="Enter author's name"required>
+                </div>
+                            
+                <div class="input">
+                <label for ="publisher">Book Publisher</label>
+                            
+                <input type = "text" id="publisher" placeholder="Enter publisher name"required>
+                </div>
+                            
+                <button type ="submit" class="add-button">Add Book</button>
            
             </form>
         </section>
         <!--Books List Section-->
         <section class="book_list_section">
             <h2>Books in Stock</h2>
-            <table>
+            <table class="book">
                 <thead>
                     <tr>
                         <th>Title</th>
