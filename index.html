@@ -19,8 +19,32 @@
             <form id="book_form">
                 <label for="title">Book Title</label>
                 <input type = "text" id="title" placeholders="Enter book title"required>
-            </form>
 
+                <label for="author">Book Author</label>
+                <input type = "text" id="title" placeholders="Enter author's name"required>
+
+                <label for="publisher">Book Publisher</label>
+                <input type = "text" id="publisher" placeholders="Enter publisher name"required>
+                <button type ="submit">Add Book</button>
+           
+            </form>
+        </section>
+        <!--Books List Section-->
+        <section class="book_list_section">
+            <h2>Books in Stock</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="book_list">
+                    <!--Books from API will be dynamically added here-->
+                </tbody>
+            </table>
         </section>
     </main>
 </body>
