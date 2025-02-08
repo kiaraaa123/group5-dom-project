@@ -38,13 +38,8 @@ const deleteData = (e) => {
      formValues.forEach((value, key) => (data[key] = value));
     };
    
-    const resetFormInputs = (e) => {
-     const inputs = e.target.querySelectorAll("input");
-     return inputs.forEach((el) => (el.value = ""));
-    };
-   
     getFormValues(e);
-    resetFormInputs(e);
+    e.target.reset()
    
     axios
      .post(url, data, {
