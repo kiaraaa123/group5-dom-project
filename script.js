@@ -2,7 +2,7 @@ const tbody = document.querySelector("table tbody");
 const url = "https://bookstore-api-six.vercel.app/api/books";
 const cols = ["title", "author", "publisher"];
 
-// Table UI HTML helper
+/* Table UI utility; this is to keep all the DOM manipulation functions in one place and as the source of truth for what shows up on the DOM */
 const table = {
   template: tbody.querySelector("tr"),
   api: "https://bookstore-api-six.vercel.app/api/books",
@@ -88,13 +88,14 @@ const table = {
     }
   },
 };
+/* Table UI utility ^^^ */
 
-addTableRow = (e, obj) => {
+const addTableRow = (e, obj) => {
   table.rows.add(table.populatedTableCells(obj, 'button[name="delete"]'));
   table.syncDOM();
 }
 
-deleteTableRow = (e, idx) => {
+const deleteTableRow = (e, idx) => {
   const elemToDelete = e.target.closest(`tr[data-id="${idx}"]`);
   table.rows.delete(elemToDelete);
   table.syncDOM();
